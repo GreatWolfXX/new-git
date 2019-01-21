@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/mainTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textLogin"
+        android:textColor="@color/colorText"
+        android:textSize="32dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="113dp"
+        android:text="@string/login"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/password"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/editLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorEditText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textLogin"
+        app:layout_constraintStart_toEndOf="@+id/textLogin" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-"
+        android:ems="10"
+        android:hint="@string/editPassword"
+        android:inputType="textNoSuggestions|textPassword"
+        android:textColor="@color/colorEditText"
+        android:imeOptions="actionDone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editPassword"
+        app:layout_constraintStart_toEndOf="@+id/editPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/buttonLogin"
+        app:layout_constraintEnd_toStartOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonReg"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+
+</android.support.constraint.ConstraintLayout>

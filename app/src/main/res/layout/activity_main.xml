@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/reg"
+        android:textColor="@color/colorText"
+        android:textSize="32dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/firstName"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/lastName"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFirstName" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/login"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLastName" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/password"
+        android:textColor="@color/colorText"
+        android:textSize="22dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:ems="10"
+        android:hint="@string/editFirstName"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorEditText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textFirstName"
+        app:layout_constraintStart_toEndOf="@+id/textFirstName" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/editLastName"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorEditText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textLastName"
+        app:layout_constraintStart_toEndOf="@+id/textLastName" />
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/editLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorEditText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textLogin"
+        app:layout_constraintStart_toEndOf="@+id/textLogin" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/editPassword"
+        android:inputType="textNoSuggestions|textPassword"
+        android:textColor="@color/colorEditText"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-"
+        android:imeOptions="actionDone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textPassword" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="49dp"
+        android:text="@string/buttonNext"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReg"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editPassword"
+        app:layout_constraintStart_toEndOf="@+id/editPassword" />
+
+</android.support.constraint.ConstraintLayout>

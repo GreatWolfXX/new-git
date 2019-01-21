@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Auth API</string>
+    <string name="reg">Реєстрація</string>
+    <string name="firstName">"Ім'я:"</string>
+    <string name="lastName">Прізвище:</string>
+    <string name="login">Логін:</string>
+    <string name="password">Пароль:</string>
+    <string name="editFirstName">FirstName</string>
+    <string name="editLastName">LastName</string>
+    <string name="editLogin">Login</string>
+    <string name="editPassword">Password</string>
+    <string name="buttonNext">Далі</string>
+    <string name="textLogin">Вхід</string>
+    <string name="buttonLogin">Увійти</string>
+    <string name="buttonReg">Зареєструватися</string>
+</resources>
